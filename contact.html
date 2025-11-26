@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Siliguri PC Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--bg-body);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-main);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        .contact-info-card {
+            background: var(--bg-surface);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Siliguri<span>PC</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="builds.html" class="nav-link">Custom Builds</a></li>
+                    <li><a href="deals.html" class="nav-link">Deals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-sm">
+                <i class="ph ph-whatsapp-logo" style="margin-right: 6px; font-size: 1.1em;"></i>
+                Chat Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+
+                <!-- Contact Info -->
+                <div>
+                    <h1 class="section-title" style="margin-bottom: 2rem;">Get in Touch</h1>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                        Have a question about a product? Need a custom quote? Visit our store or drop us a message.
+                    </p>
+
+                    <div class="contact-info-card">
+                        <i class="ph ph-map-pin contact-icon"></i>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Visit Store</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                                123, Hill Cart Road, Near Sevoke More,<br>
+                                Siliguri, West Bengal - 734001
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="ph ph-phone contact-icon"></i>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Call Us</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                                +91 98765 43210<br>
+                                +91 353 25XXXXX
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="ph ph-envelope contact-icon"></i>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Email</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                                sales@siliguripc.com<br>
+                                support@siliguripc.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <i class="ph ph-clock contact-icon"></i>
+                        <div>
+                            <h4 style="font-weight: 600; margin-bottom: 0.25rem;">Opening Hours</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                                Mon - Sat: 10:00 AM - 8:30 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div
+                    style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border);">
+                    <h3 style="margin-bottom: 1.5rem;">Send a Message</h3>
+                    <form onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-input" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Topic</label>
+                            <select class="form-select">
+                                <option>General Inquiry</option>
+                                <option>Custom PC Build</option>
+                                <option>Laptop Order</option>
+                                <option>Service / Repair</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" rows="4" placeholder="Tell us what you need..."></textarea>
+                        </div>
+                        <button class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Siliguri<span>PC</span></h3>
+                    <p>Your trusted local partner for all things tech. Serving Siliguri and North Bengal since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Laptops</a></li>
+                        <li><a href="shop.html">Components</a></li>
+                        <li><a href="builds.html">Custom PCs</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Service Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="ph ph-phone"></i> +91 98765 43210</a></li>
+                        <li><a href="#"><i class="ph ph-envelope"></i> hello@siliguripc.com</a></li>
+                        <li><a href="#"><i class="ph ph-map-pin"></i> Hill Cart Road, Siliguri</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Siliguri PC Hub. All rights reserved. Design for Demo.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

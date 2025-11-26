@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals & Offers | Siliguri PC Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-right: 8px;
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--danger);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.8rem;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Siliguri<span>PC</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="builds.html" class="nav-link">Custom Builds</a></li>
+                    <li><a href="deals.html" class="nav-link active">Deals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-sm">
+                <i class="ph ph-whatsapp-logo" style="margin-right: 6px; font-size: 1.1em;"></i>
+                Chat Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="section text-center">
+        <div class="container">
+            <h1 class="hero-title">Limited Time Offers</h1>
+            <p class="hero-subtitle">Grab these deals before they are gone. Updated weekly.</p>
+        </div>
+    </section>
+
+    <!-- Deals Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid grid-4">
+
+                <!-- Deal 1 -->
+                <div class="card product-card">
+                    <div class="discount-badge">-15%</div>
+                    <div class="product-image">
+                        <i class="ph ph-laptop" style="font-size: 64px; color: #3f3f46;"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Laptops</div>
+                        <h3 class="product-title"><a href="product-generic.html">Lenovo Legion 5 Pro</a></h3>
+                        <p class="product-specs">Ryzen 7, RTX 3070 Ti, 165Hz QHD</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="old-price">₹1,45,000</span>
+                                <div class="product-price" style="color: var(--danger);">₹1,23,250</div>
+                            </div>
+                            <a href="product-generic.html" class="btn btn-outline btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="card product-card">
+                    <div class="discount-badge">-25%</div>
+                    <div class="product-image">
+                        <i class="ph ph-mouse" style="font-size: 64px; color: #3f3f46;"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Accessories</div>
+                        <h3 class="product-title"><a href="product-generic.html">Razer Viper Ultimate</a></h3>
+                        <p class="product-specs">Wireless Gaming Mouse with Dock</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="old-price">₹9,999</span>
+                                <div class="product-price" style="color: var(--danger);">₹7,499</div>
+                            </div>
+                            <a href="product-generic.html" class="btn btn-outline btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="card product-card">
+                    <div class="discount-badge">-10%</div>
+                    <div class="product-image">
+                        <i class="ph ph-monitor" style="font-size: 64px; color: #3f3f46;"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Monitors</div>
+                        <h3 class="product-title"><a href="product-generic.html">BenQ Mobiuz EX2510S</a></h3>
+                        <p class="product-specs">1080p, 165Hz, IPS, HDRi</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="old-price">₹19,990</span>
+                                <div class="product-price" style="color: var(--danger);">₹17,990</div>
+                            </div>
+                            <a href="product-generic.html" class="btn btn-outline btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="card product-card">
+                    <div class="discount-badge">Clearance</div>
+                    <div class="product-image">
+                        <i class="ph ph-hard-drives" style="font-size: 64px; color: #3f3f46;"></i>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-category">Storage</div>
+                        <h3 class="product-title"><a href="product-generic.html">WD Blue SN570 1TB</a></h3>
+                        <p class="product-specs">NVMe SSD, 3500MB/s Read</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="old-price">₹5,500</span>
+                                <div class="product-price" style="color: var(--danger);">₹4,200</div>
+                            </div>
+                            <a href="product-generic.html" class="btn btn-outline btn-sm">View</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Siliguri<span>PC</span></h3>
+                    <p>Your trusted local partner for all things tech. Serving Siliguri and North Bengal since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Laptops</a></li>
+                        <li><a href="shop.html">Components</a></li>
+                        <li><a href="builds.html">Custom PCs</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Service Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="ph ph-phone"></i> +91 98765 43210</a></li>
+                        <li><a href="#"><i class="ph ph-envelope"></i> hello@siliguripc.com</a></li>
+                        <li><a href="#"><i class="ph ph-map-pin"></i> Hill Cart Road, Siliguri</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Siliguri PC Hub. All rights reserved. Design for Demo.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

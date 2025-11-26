@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom PC Builds | Siliguri PC Hub</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        .build-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .build-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .build-header {
+            padding: 2rem;
+            background: linear-gradient(to bottom right, var(--bg-surface), var(--bg-body));
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .build-icon {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .build-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .build-price {
+            font-size: 1.25rem;
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .build-specs {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .spec-item i {
+            margin-right: 12px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .build-footer {
+            padding: 1.5rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo">Siliguri<span>PC</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="builds.html" class="nav-link active">Custom Builds</a></li>
+                    <li><a href="deals.html" class="nav-link">Deals</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-sm">
+                <i class="ph ph-whatsapp-logo" style="margin-right: 6px; font-size: 1.1em;"></i>
+                Chat Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="section text-center" style="padding-bottom: 2rem;">
+        <div class="container">
+            <h1 class="hero-title" style="font-size: 3rem;">Expertly Crafted PCs</h1>
+            <p class="hero-subtitle">Choose from our curated configurations or contact us for a completely custom build
+                tailored to your specific workflow.</p>
+        </div>
+    </section>
+
+    <!-- Builds Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+
+                <!-- Build 1: Entry Level -->
+                <div class="build-card">
+                    <div class="build-header">
+                        <i class="ph ph-student build-icon"></i>
+                        <h3 class="build-name">Office & Study</h3>
+                        <div class="build-price">₹35,000 - ₹45,000</div>
+                    </div>
+                    <div class="build-specs">
+                        <div class="spec-item"><i class="ph ph-cpu"></i> Intel Core i3 12th Gen</div>
+                        <div class="spec-item"><i class="ph ph-memory"></i> 16GB DDR4 RAM</div>
+                        <div class="spec-item"><i class="ph ph-hard-drives"></i> 512GB NVMe SSD</div>
+                        <div class="spec-item"><i class="ph ph-graphics-card"></i> Intel UHD Graphics</div>
+                        <div class="spec-item"><i class="ph ph-plug"></i> 450W Bronze PSU</div>
+                    </div>
+                    <div class="build-footer">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Build 2: Mid Range Gaming -->
+                <div class="build-card"
+                    style="border-color: var(--primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);">
+                    <div class="build-header">
+                        <i class="ph ph-game-controller build-icon"></i>
+                        <h3 class="build-name">1080p Gaming</h3>
+                        <div class="build-price">₹75,000 - ₹85,000</div>
+                    </div>
+                    <div class="build-specs">
+                        <div class="spec-item"><i class="ph ph-cpu"></i> Intel Core i5 13400F</div>
+                        <div class="spec-item"><i class="ph ph-memory"></i> 16GB DDR5 RAM</div>
+                        <div class="spec-item"><i class="ph ph-hard-drives"></i> 1TB Gen4 NVMe SSD</div>
+                        <div class="spec-item"><i class="ph ph-graphics-card"></i> RTX 4060 8GB</div>
+                        <div class="spec-item"><i class="ph ph-plug"></i> 650W Gold PSU</div>
+                    </div>
+                    <div class="build-footer">
+                        <a href="contact.html" class="btn btn-primary" style="width: 100%;">Best Seller - Inquire</a>
+                    </div>
+                </div>
+
+                <!-- Build 3: High End -->
+                <div class="build-card">
+                    <div class="build-header">
+                        <i class="ph ph-video-camera build-icon"></i>
+                        <h3 class="build-name">Creator / 4K</h3>
+                        <div class="build-price">₹1,80,000+</div>
+                    </div>
+                    <div class="build-specs">
+                        <div class="spec-item"><i class="ph ph-cpu"></i> Intel Core i7 14700K</div>
+                        <div class="spec-item"><i class="ph ph-memory"></i> 32GB DDR5 6000MHz</div>
+                        <div class="spec-item"><i class="ph ph-hard-drives"></i> 2TB Samsung 990 Pro</div>
+                        <div class="spec-item"><i class="ph ph-graphics-card"></i> RTX 4070 Ti Super</div>
+                        <div class="spec-item"><i class="ph ph-plug"></i> 850W Gold Modular</div>
+                    </div>
+                    <div class="build-footer">
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%;">Inquire Now</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom Request CTA -->
+            <div
+                style="margin-top: 4rem; padding: 3rem; background: var(--bg-surface); border-radius: var(--radius-md); text-align: center; border: 1px solid var(--border);">
+                <h2 style="margin-bottom: 1rem;">Need something specific?</h2>
+                <p
+                    style="color: var(--text-muted); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    We build workstations for video editing, 3D rendering, machine learning, and more. Tell us your
+                    requirements and budget, and we'll design the perfect rig for you.
+                </p>
+                <a href="contact.html" class="btn btn-primary">Request Custom Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Siliguri<span>PC</span></h3>
+                    <p>Your trusted local partner for all things tech. Serving Siliguri and North Bengal since 2015.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html">Laptops</a></li>
+                        <li><a href="shop.html">Components</a></li>
+                        <li><a href="builds.html">Custom PCs</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                        <li><a href="#">Service Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="ph ph-phone"></i> +91 98765 43210</a></li>
+                        <li><a href="#"><i class="ph ph-envelope"></i> hello@siliguripc.com</a></li>
+                        <li><a href="#"><i class="ph ph-map-pin"></i> Hill Cart Road, Siliguri</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Siliguri PC Hub. All rights reserved. Design for Demo.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
